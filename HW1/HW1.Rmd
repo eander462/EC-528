@@ -1,6 +1,7 @@
 ---
 title: "HW 1"
 output: github_document
+output: html
 ---
 
 ```{r setup, include=FALSE}
