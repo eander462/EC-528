@@ -1,7 +1,6 @@
 ---
 title: "HW 1"
 output: github_document
-output: html
 ---
 
 ```{r setup, include=FALSE}
@@ -11,6 +10,72 @@ knitr::opts_chunk$set(cache = TRUE)
 pacman::p_load(tidyverse)
 
 ```
+
+### Question 1
+
+#### 1.1
+
+$p_x = 1.1$, and $p_y = 1$ so the budget constraint is:
+
+$100 = 1.1X + Y$
+
+#### 1.12
+
+The MRS is:
+
+$U_X = \frac{1}{X}$\n
+$U_Y = 1$
+
+MRS = $\frac{1}{X}$
+
+Set MRS equal to the price ratio
+
+$\frac{1}{X} = p_X/p_Y$\n
+$\frac{1}{X} = 1.1/1 = 1.1$
+
+Which gives:
+
+X = 1/1.1 = 0.91
+
+Plug that into the budget constraint:
+
+100 = 1.1*(1/1.1) + Y
+100 = 1 + Y
+Y = 99
+
+So the consumer will buy 99 of Y and 0.91 of X.
+
+#### 1.13
+
+The quasi-linear utility function is good when good Y is money because Y does not have diminishing marginal returns (in classical models). The partial derivative with respect to y is 1, so no matter how much money you have, getting an additional dollar provides the same utility. Good X does have diminishing marginal returns. The partial derivative with respect to X is 1/X, so when you have more X to start with, getting an additional X does not give you as much utility as when you start with only a few X. This is what we expect of goods. Getting a 50th gallon of milk does not bring me any utility at all while getting the second one gives me a lot. 
+
+#### 1.21
+
+I know the answer here is the same as the last part, but I will solve it with the Lagrangian method for fun (\emph{fun}).
+
+$L = ln(x) + y + \lambda(100 - 1.1x -y)$
+
+$L_x = 1/x -1.1\lambda$ = 0
+$L_y = 1 - \lambda$ = 0
+$L_\lambda = 100 - 1.1x - y = 0$
+
+Solving this gives 
+
+$\lambda = 1$
+$1/x - 1 = 0$
+$x = 0.91$
+$y = 99$
+
+#### 1.22
+
+Plugging these values into the utility function gives:
+
+U(x,y,c) = ln(0.91) + 99 - v
+U = 98.9 - v
+
+#### 1.23
+
+
 
 ### Question 3
 

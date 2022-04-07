@@ -1,6 +1,83 @@
 HW 1
 ================
 
+### Question 1
+
+#### 1.1
+
+![p_x = 1.1](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;p_x%20%3D%201.1 "p_x = 1.1"),
+and
+![p_y = 1](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;p_y%20%3D%201 "p_y = 1")
+so the budget constraint is:
+
+![100 = 1.1X + Y](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;100%20%3D%201.1X%20%2B%20Y "100 = 1.1X + Y")
+
+#### 1.12
+
+The MRS is:
+
+![U_X = \frac{1}{X}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;U_X%20%3D%20%5Cfrac%7B1%7D%7BX%7D "U_X = \frac{1}{X}")
+![U_Y = 1](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;U_Y%20%3D%201 "U_Y = 1")
+
+MRS =
+![\frac{1}{X}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cfrac%7B1%7D%7BX%7D "\frac{1}{X}")
+
+Set MRS equal to the price ratio
+
+![\frac{1}{X} = p_X/p_Y](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cfrac%7B1%7D%7BX%7D%20%3D%20p_X%2Fp_Y "\frac{1}{X} = p_X/p_Y")
+![\frac{1}{X} = 1.1/1 = 1.1](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cfrac%7B1%7D%7BX%7D%20%3D%201.1%2F1%20%3D%201.1 "\frac{1}{X} = 1.1/1 = 1.1")
+
+Which gives:
+
+X = 1/1.1 = 0.91
+
+Plug that into the budget constraint:
+
+100 = 1.1\*(1/1.1) + Y 100 = 1 + Y Y = 99
+
+So the consumer will buy 99 of Y and 0.91 of X.
+
+#### 1.13
+
+The quasi-linear utility function is good when good Y is money because Y
+does not have diminishing marginal returns (in classical models). The
+partial derivative with respect to y is 1, so no matter how much money
+you have, getting an additional dollar provides the same utility. Good X
+does have diminishing marginal returns. The partial derivative with
+respect to X is 1/X, so when you have more X to start with, getting an
+additional X does not give you as much utility as when you start with
+only a few X. This is what we expect of goods. Getting a 50th gallon of
+milk does not bring me any utility at all while getting the second one
+gives me a lot.
+
+#### 1.21
+
+I know the answer here is the same as the last part, but I will solve it
+with the Lagrangian method for fun ().
+
+![L = ln(x) + y + \lambda(100 - 1.1x -y)](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;L%20%3D%20ln%28x%29%20%2B%20y%20%2B%20%5Clambda%28100%20-%201.1x%20-y%29 "L = ln(x) + y + \lambda(100 - 1.1x -y)")
+
+![L_x = 1/x -1.1\lambda](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;L_x%20%3D%201%2Fx%20-1.1%5Clambda "L_x = 1/x -1.1\lambda")
+= 0
+![L_y = 1 - \lambda](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;L_y%20%3D%201%20-%20%5Clambda "L_y = 1 - \lambda")
+= 0
+![L\_\lambda = 100 - 1.1x - y = 0](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;L_%5Clambda%20%3D%20100%20-%201.1x%20-%20y%20%3D%200 "L_\lambda = 100 - 1.1x - y = 0")
+
+Solving this gives
+
+![\lambda = 1](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Clambda%20%3D%201 "\lambda = 1")
+![1/x - 1 = 0](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;1%2Fx%20-%201%20%3D%200 "1/x - 1 = 0")
+![x = 0.91](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;x%20%3D%200.91 "x = 0.91")
+![y = 99](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;y%20%3D%2099 "y = 99")
+
+#### 1.22
+
+Plugging these values into the utility function gives:
+
+U(x,y,c) = ln(0.91) + 99 - v U = 98.9 - v
+
+#### 1.23
+
 ### Question 3
 
 #### 3.1
