@@ -74,9 +74,38 @@ Solving this gives
 
 Plugging these values into the utility function gives:
 
-U(x,y,c) = ln(0.91) + 99 - v U = 98.9 - v
+U(x,y,c) = ln(0.91) + 99 - v U = 98.905 - v
 
 #### 1.23
+
+The MRS is still
+
+MRS = 1/X
+
+Set that equal to the price ratio
+
+1/X = 1/1 1/X = 1 X = 1
+
+Plug that into the budget constraint
+
+100 = 1.1X + Y 100 = 1.1 + Y Y = 98.9
+
+So the consumer buys 1 of X and 98.9 of Y this time.
+
+Their utility is
+
+U = ln(1) + 98.9 U = 98.9
+
+#### 1.24
+
+If it is optimal to pay attention to taxes, the consumer will have
+higher utility from part 1.22 than in 1.23
+
+98.905 - v \> 98.9 -v \> -.0047 v \< 0.0047
+
+So, if v is less than .0047, it is optimal to pay attention to taxes
+
+#### 1.3
 
 ### Question 3
 
