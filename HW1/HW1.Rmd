@@ -112,6 +112,20 @@ So, if v is less than .0047, it is optimal to pay attention to taxes
 
 Both the store and the consumer pay for the sales tax. The store pays because the consumer buys less of X than they would if there was no sales tax. The consumer pays because they have to lose utility by paying attention to the sales tax, and buy less of the items than they would without it. 
 
+
+### Question 2
+
+#### 2.1
+Their research question is if demand for a good changes depending on whether or not the tax is included in the posted price. This is an interesting question because in economics, we assume that people will take the tax into account and make a rational decision that optimizes their utility. However, if the demand changes, that means that people weren't taking the tax into account and that they were making suboptimal decisions. 
+
+#### 2.2
+They created an experiment by placing new price tags on 3 categories of items in a grocery store. They kept the original price tags on the items, but put the new tags underneath the old ones. The new tags reminded customers of the price including the sales tax, while the old tags had the price not including sales tax, as is standard. They then observed how the demand changed when customers were reminded of the sales tax (something they should have already been considering when making purchases).
+
+It is important that an experiment was used here. The researchers needed to keep all else equal so that the effects that they observed can be attributed to the new price tags. To do this they had two control groups of products. This allows the researchers to compare the two groups. Because of the control group, the researchers can know that a potential decrease in demand of a product is due to the stated price with tax, and not because of an overall decrease in demand in that grocery store (maybe because of road construction near the store that is causing shoppers to go elsewhere) or because of a decrease in demand in that town in general (maybe for reasons such as a recession where people are spending less overall).
+
+#### 2.3
+The coefficient tells us that holding all else equal, the revenue per category drops by an average of 13.12 per week when the new price tags are included. The standard error of 4.89 allows us to calculate a confidence interval for the coefficient. We would get a 95% CI of (3.34, 22.9) which gives us evidence to reject the null hypothesis that the effect is 0. The confidence interval also tells us that if we repeat this expirement, 95% of the time, our coefficient will fall within that interval.
+
 ### Question 3
 
 #### 3.1
@@ -174,7 +188,14 @@ The standard deviation is 1.5.
 
 #### 3.6
 
-The standard is smaller than it is in part 3. This is expected because as we run the simulation more times, the outcomes should be less noisy, which corresponds to a smaller standard error. 
+Our answers in part 3 and 5 are roughly the same, but in part 5 it is smaller because we have increased our sample size. In part 3 we are measuring the SE, which is giving us the variability of the found mean. In part 5 we are measuring the standard deviation of the found means, which is the same as the standard error from part 3. However, it is slightly smaller in part 5 because of the increased sample size, and SE decreases with larger samples. 
+
+### Question 4
+
+#### 4.1
+If he ate all of the remaining food, there are 3 possible reasons. 1) He didn't want that much food but knew that it was already paid for, so he couldn't let it go to waste. 2) He was still hungry after finishing the food but didn't want to order more. 3) The remaining food is the exact amount of food that he could eat until he was no longer hungry, so finishing it gave him the exact amount of food that he wanted. 
+
+The economist he was eating with reasoned that outcome #3 is rather unlikely, so he assumed that one of the first 2 scenarios occurred, and we would agree that he is probably correct. 
 
 
 
