@@ -198,6 +198,10 @@ If he ate all of the remaining food, there are 3 possible reasons. 1) He didn't 
 The economist he was eating with reasoned that outcome #3 is rather unlikely, so he assumed that one of the first 2 scenarios occurred, and we would agree that he is probably correct. 
 
 
+### Question 4
+
+#### 4.1
+
 
 
 
