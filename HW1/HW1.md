@@ -189,3 +189,5 @@ The standard deviation is 1.5.
 The standard is smaller than it is in part 3. This is expected because
 as we run the simulation more times, the outcomes should be less noisy,
 which corresponds to a smaller standard error.
+
+S
