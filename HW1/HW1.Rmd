@@ -1,5 +1,6 @@
 ---
 title: "HW 1"
+author: Erik Andersen, Jeremy Patak
 output: html_document
 ---
 
@@ -116,7 +117,7 @@ Both the store and the consumer pay for the sales tax. The store pays because th
 ### Question 2
 
 #### 2.1
-Their research question is if demand for a good changes depending on whether or not the tax is included in the posted price. This is an interesting question because in economics, we assume that people will take the tax into account and make a rational decision that optimizes their utility. However, if the demand changes, that means that people weren't taking the tax into account and that they were making suboptimal decisions. 
+Their research question is if demand for a good changes depending on whether or not the tax is included in the posted price. This is an interesting question because in economics, we assume that people will take the tax into account and make a rational decision that optimizes their utility. However, if the demand changes, that means that people weren't taking the tax into account and that they were making sub optimal decisions. 
 
 #### 2.2
 They created an experiment by placing new price tags on 3 categories of items in a grocery store. They kept the original price tags on the items, but put the new tags underneath the old ones. The new tags reminded customers of the price including the sales tax, while the old tags had the price not including sales tax, as is standard. They then observed how the demand changed when customers were reminded of the sales tax (something they should have already been considering when making purchases).
@@ -124,7 +125,7 @@ They created an experiment by placing new price tags on 3 categories of items in
 It is important that an experiment was used here. The researchers needed to keep all else equal so that the effects that they observed can be attributed to the new price tags. To do this they had two control groups of products. This allows the researchers to compare the two groups. Because of the control group, the researchers can know that a potential decrease in demand of a product is due to the stated price with tax, and not because of an overall decrease in demand in that grocery store (maybe because of road construction near the store that is causing shoppers to go elsewhere) or because of a decrease in demand in that town in general (maybe for reasons such as a recession where people are spending less overall).
 
 #### 2.3
-The coefficient tells us that holding all else equal, the revenue per category drops by an average of 13.12 per week when the new price tags are included. The standard error of 4.89 allows us to calculate a confidence interval for the coefficient. We would get a 95% CI of (3.34, 22.9) which gives us evidence to reject the null hypothesis that the effect is 0. The confidence interval also tells us that if we repeat this expirement, 95% of the time, our coefficient will fall within that interval.
+The coefficient tells us that holding all else equal, the revenue per category drops by an average of 13.12 per week when the new price tags are included. The standard error of 4.89 allows us to calculate a confidence interval for the coefficient. We would get a 95% CI of (-3.34, -22.9) which gives us evidence to reject the null hypothesis that the effect is 0. 
 
 ### Question 3
 
@@ -198,7 +199,7 @@ If he ate all of the remaining food, there are 3 possible reasons. 1) He didn't 
 The economist he was eating with reasoned that outcome #3 is rather unlikely, so he assumed that one of the first 2 scenarios occurred, and we would agree that he is probably correct. 
 
 
-S
+
 
 
 
