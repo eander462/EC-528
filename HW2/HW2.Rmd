@@ -1,0 +1,24 @@
+---
+title: "HW2"
+author: "Erik Andersen"
+date: '2022-04-22'
+output: html_document
+---
+
+### Question 2
+
+#### 2.1
+
+The authors in this paper are researching if workers choose to work more if wages rise. This is an interesting question because standard economic theory predicts that people should work more when wages are higher, but so far the evidence has pointed to increased wages having a negligable effect on hours worked. 
+
+#### 2.2
+
+The researchers got data from a Swiss bike messaging service. Their data contained hours worked, and revenue generated for each worker. To run the experiment, they randomly separated messengers into two groups A and B. The treated group was given a 25% increase in their commission rate. There were two periods to the study. In the first period, group A was the control and B was treated, then in the second period, the roles were reversed. The participants were notified that they would recieve a commission bump before it happend which is important because the theory depends on the wage increase being anticipated and temporary. 
+
+#### 2.3
+
+#### 2.4
+
+The first column of table 3 tells us (with well isolated treatment effect) that the increased commision generated 1000 CHF in additional revenue over the control grou. Column 4 tell us the same about hours worked. There is strong evidence that workers worked 4 additional shifts when the commission rate was raised. 
+
+Table 5 tells us that revenue per shift is reduced by 6% when the high commissions are in effect. 
