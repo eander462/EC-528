@@ -1,24 +1,69 @@
 ---
 title: "HW2"
-author: "Erik Andersen"
+author: "Erik Andersen, Jeremy Patak"
 date: '2022-04-22'
 output: html_document
 ---
+
+### Question 1
+
+#### 1.1
+Henry's utility function is $U(h) = wh - \frac{\beta h^2}{2} + (wh-100)$
+
+To find how many hours he will work, we will plug in $\beta$ and wage, then find where his utility is maximized by differentiating.
+
+When $\beta=1$ and wage = 20, then $U(h) = 20h - \frac{h^2}{2} + (20h-100)$
+
+$\frac{dU}{dh} = 20 - \frac{2h}{2} + 20 = 40 - h$
+
+Setting $\frac{dU}{dh}$ equal to zero gives us $40-h = 0$ or $h=40$
+
+Therefore Henry's utility will be maximized when he works 40 hours.
+
+#### 1.2
+To see how Henry responds to wage changes, we will see how much he works if his wage is increased to 25 and $\beta$ stays at 1.
+
+When $\beta=1$ and wage = 25, then $U(h) = 25h - \frac{h^2}{2} + (25h-100)$
+
+$\frac{dU}{dh} = 25 - \frac{2h}{2} + 25 = 50 - h$
+
+Setting $\frac{dU}{dh}$ equal to zero gives us $50-h = 0$ or $h=50$
+
+Therefore, Henry will work 50 hours if his wage increases to 25, and in general will work more if his wage increases. 
+
+#### 1.3
+```{r}
+pacman::p_load(ggplot2, dplyr)
+
+data = data.frame(hours = seq(0,4.99999, .1))
+data = data %>% mutate(utility = 60-hours)
+data2 = data.frame(hours = seq(5,24,.1))
+data2 = data2 %>% mutate(utility = 40-hours)
+
+data = rbind(data, data2)
+rm(data2)
+
+
+ggplot(data, aes(x=hours, y=utility)) +
+  geom_point()
+```
+
+
 
 ### Question 2
 
 #### 2.1
 
-The authors in this paper are researching if workers choose to work more if wages rise. This is an interesting question because standard economic theory predicts that people should work more when wages are higher, but so far the evidence has pointed to increased wages having a negligable effect on hours worked. 
+The authors in this paper are researching if workers choose to work more if wages rise. This is an interesting question because standard economic theory predicts that people should work more when wages are higher, but so far the evidence has pointed to increased wages having a negligible effect on hours worked. 
 
 #### 2.2
 
-The researchers got data from a Swiss bike messaging service. Their data contained hours worked, and revenue generated for each worker. To run the experiment, they randomly separated messengers into two groups A and B. The treated group was given a 25% increase in their commission rate. There were two periods to the study. In the first period, group A was the control and B was treated, then in the second period, the roles were reversed. The participants were notified that they would recieve a commission bump before it happend which is important because the theory depends on the wage increase being anticipated and temporary. 
+The researchers got data from a Swiss bike messaging service. Their data contained hours worked, and revenue generated for each worker. To run the experiment, they randomly separated messengers into two groups A and B. The treated group was given a 25% increase in their commission rate. There were two periods to the study. In the first period, group A was the control and B was treated, then in the second period, the roles were reversed. The participants were notified that they would receive a commission bump before it happend which is important because the theory depends on the wage increase being anticipated and temporary. 
 
 #### 2.3
 
 #### 2.4
 
-The first column of table 3 tells us (with well isolated treatment effect) that the increased commision generated 1000 CHF in additional revenue over the control grou. Column 4 tell us the same about hours worked. There is strong evidence that workers worked 4 additional shifts when the commission rate was raised. 
+The first column of table 3 tells us (with well isolated treatment effect) that the increased commission generated 1000 CHF in additional revenue over the control group. Column 4 tell us the same about hours worked. There is strong evidence that workers worked 4 additional shifts when the commission rate was raised. 
 
 Table 5 tells us that revenue per shift is reduced by 6% when the high commissions are in effect. 
