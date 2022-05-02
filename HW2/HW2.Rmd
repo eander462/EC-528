@@ -47,7 +47,8 @@ data = data %>% mutate(Legend = 'MB')
 
 
 ggplot(data, aes(x=hours, y=utility, color = Legend)) +
-  geom_point()
+  geom_point() +
+  lims(y=c(0,60))
 ```
 
 #### 1.4
