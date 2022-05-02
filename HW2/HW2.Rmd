@@ -71,7 +71,10 @@ Colin will work until MB=MC, and as you can see from the graph, that happens at 
 The same result is found when maximizing Colin's utility function like we did in 1.1 and 1.2.
 
 #### 1.7
+An increase in wage would shift up the horizontal Marginal Benefit line. The new intersection of the MB and MC would then occur further right, proving that an increase in wage would increase the hours worked by Colin.
 
+#### 1.8
+Assuming an upward sloping marginal cost curve or a downward sloping marginal benefit curve, it will always be optimal to work more when wages go up. This is because we were optimizing the amount of hours worked at a given wage, but if the benefit increases with everything else held constant, we wouldn't be optimizing anymore, and would need to increase the amount of hours worked to get back to an optimal level. 
 
 ### Question 2
 
