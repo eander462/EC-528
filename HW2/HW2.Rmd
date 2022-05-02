@@ -36,18 +36,41 @@ Therefore, Henry will work 50 hours if his wage increases to 25, and in general 
 pacman::p_load(ggplot2, dplyr)
 
 data = data.frame(hours = seq(0,4.99999, .1))
-data = data %>% mutate(utility = 60-hours)
+data = data %>% mutate(utility = 60)
 data2 = data.frame(hours = seq(5,24,.1))
-data2 = data2 %>% mutate(utility = 40-hours)
+data2 = data2 %>% mutate(utility = 40)
 
 data = rbind(data, data2)
 rm(data2)
 
+data = data %>% mutate(Legend = 'MB')
 
-ggplot(data, aes(x=hours, y=utility)) +
+
+ggplot(data, aes(x=hours, y=utility, color = Legend)) +
   geom_point()
 ```
 
+#### 1.4
+```{r}
+data2 = data.frame(hours=seq(0,24,.1))
+data2 = data2 %>% mutate(utility = 2*hours) %>% mutate(Legend = 'MC')
+data = rbind(data, data2)
+rm(data2)
+
+
+ggplot(data, aes(x=hours, y=utility, color = Legend)) +
+  geom_point()
+```
+
+#### 1.5 
+
+
+#### 1.6 
+Colin will work until MB=MC, and as you can see from the graph, that happens at 20 hours.
+
+The same result is found when maximizing Colin's utility function like we did in 1.1 and 1.2.
+
+#### 1.7
 
 
 ### Question 2
