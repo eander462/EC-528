@@ -64,7 +64,9 @@ ggplot(data, aes(x=hours, y=utility, color = Legend)) +
 ```
 
 #### 1.5 
+The $\lambda$ value is a parameter that represents loss aversion.
 
+Note: Erik this doesn't feel right anymore even though it did when we talked about it in class. In this example even if he works just 4 hours hes not really losing money. Maybe it's more of a "he needs a certain amount of money and once he hits that amount of hours needed to get that money, then money isn't as valuable to him" because this lambda is what's determining the marginal benefit (at least partially). 
 
 #### 1.6 
 Colin will work until MB=MC, and as you can see from the graph, that happens at 20 hours.
