@@ -21,6 +21,22 @@ Setting $\frac{dU}{dh}$ equal to zero gives us $40-h = 0$ or $h=40$
 Therefore Henry's utility will be maximized when he works 40 hours.
 
 #### 1.2
+We can take the derivative $\frac{dh}{dw}$ to see how Henry's hours responds to wages
+
+First we need to solve for an equation for h:
+
+Utility is given by $U = wh - \beta h^2/2 + (wh - 100) $, so the derivative is:
+
+$\frac{dU}{dh} =  w - \beta h + w$
+$\frac{dU}{dh} = 2w - \beta h$
+$h = 2w/\beta$
+
+Using this, we find $\frac{dh}{dw}$ to see how he responds to wage changes
+
+$\frac{dh}{dw} = 2/\beta$
+
+$\beta$ is positive, so the whole derivative is positive. This means that if wages increase then Henry will work more hours.
+
 To see how Henry responds to wage changes, we will see how much he works if his wage is increased to 25 and $\beta$ stays at 1.
 
 When $\beta=1$ and wage = 25, then $U(h) = 25h - \frac{h^2}{2} + (25h-100)$
@@ -77,6 +93,14 @@ The same result is found when maximizing Colin's utility function like we did in
 An increase in wage would shift up the horizontal Marginal Benefit line. The new intersection of the MB and MC would then occur further right, proving that an increase in wage would increase the hours worked by Colin.
 
 #### 1.8
+```{r}
+data |> 
+  mutate(extra = if_else(hours >= 10, 20, 30)) |> 
+  ggplot() + geom_point(aes(x = hours, y = utility, color =  Legend)) + 
+  geom_point(aes(x = hours, y = extra), color = 'salmon')
+```
+
+
 Assuming an upward sloping marginal cost curve or a downward sloping marginal benefit curve, it will always be optimal to work more when wages go up. This is because we were optimizing the amount of hours worked at a given wage, but if the benefit increases with everything else held constant, we wouldn't be optimizing anymore, and would need to increase the amount of hours worked to get back to an optimal level. 
 
 ### Question 2
