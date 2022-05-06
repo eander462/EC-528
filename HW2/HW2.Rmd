@@ -93,15 +93,63 @@ The same result is found when maximizing Colin's utility function like we did in
 An increase in wage would shift up the horizontal Marginal Benefit line. The new intersection of the MB and MC would then occur further right, proving that an increase in wage would increase the hours worked by Colin.
 
 #### 1.8
+
+It is not always true that someone with reference dependent preferences will work more when wages go up. A counter example here is when wages increase from 7 to 10, shown in the graph below. When the wage is 7, Colin decides to work 10.5 hours, but when the wage goes up to 10, he only works 10 hours. The key point is that he switches from the top marginal utility curve to the bottom one, which results in him working fewer hours. The math is shown below the graphs.
+
 ```{r}
-data |> 
-  mutate(extra = if_else(hours >= 10, 20, 30)) |> 
-  ggplot() + geom_point(aes(x = hours, y = utility, color =  Legend)) + 
-  geom_point(aes(x = hours, y = extra), color = 'salmon')
+ggplot(data, aes(x = hours, y = utility)) + 
+  geom_segment(aes(x = 0, xend = 14.29, y = 21, yend = 21)) +
+  geom_segment(aes(x = 14.29, xend = 24, y = 7, yend = 7)) +
+  geom_segment(aes(x = 0, xend = 24, y = 0, yend = 48))
+  labs(title = 'Decision when wage is 7')
+
+
+ggplot(data, aes(x = hours, y = utility)) + 
+  geom_segment(aes(x = 0, xend = 10, y = 30, yend = 30)) + 
+  geom_segment(aes(x = 10, xend = 24, y = 20, yend = 20)) + 
+  geom_segment(aes(x = 0, xend = 24, y = 0, yend = 48)) +
+  labs(title = 'Decision when wage is 10')
+
+
 ```
 
+When w = 7, Colin's utility function is the following:
 
-Assuming an upward sloping marginal cost curve or a downward sloping marginal benefit curve, it will always be optimal to work more when wages go up. This is because we were optimizing the amount of hours worked at a given wage, but if the benefit increases with everything else held constant, we wouldn't be optimizing anymore, and would need to increase the amount of hours worked to get back to an optimal level. 
+$7h - 2h^2/2 + (7h -100)$ if $h >= 100/7 = 14.29$
+$7h - 2h^2/2 + 2(7h -100)$ if $h < 100/7 = 14.29$
+
+If h >=14.29, then Colin maximizes his utility:
+
+$U = 14h - 2h^2/2 - 100$
+$dU/dh = 14 - 2h$
+$h = 7$
+
+If h < 14.29
+
+$U = 21h - h^2/2 - 100$
+$dU/dh = 21 - 2h$
+$h = 10.5$
+
+7 is not greater than 14.29, so Colin doesn't chose that option. 10.5 is less than 14.29, so Colin chooses to work 10.5 hours. 
+
+When w = 10, we do the same thing again
+
+$10h - 2h^2/2 + (10h -100)$ if $h >= 100/10 = 10$
+$10h - 2h^2/2 + 2(10h -100)$ if $h < 100/10 = 10$
+
+If h >= 10, then Colin maximizes his utility:
+
+$U = 20h - 2h^2/2 - 100$
+$dU/dh = 20 - 2h$
+$h = 10$
+
+If h < 10
+
+$U = 30h - h^2/2 - 100$
+$dU/dh = 30 - 2h$
+$h = 15$
+
+This time, Colin chooses the top option and works 10 hours. So, when the wage increased from 7 to 10, Colin decreased his hours worked from 10.5 to 10.
 
 ### Question 2
 
