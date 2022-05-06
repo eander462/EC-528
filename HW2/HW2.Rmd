@@ -80,9 +80,7 @@ ggplot(data, aes(x=hours, y=utility, color = Legend)) +
 ```
 
 #### 1.5 
-The $\lambda$ value is a parameter that represents loss aversion.
-
-Note: Erik this doesn't feel right anymore even though it did when we talked about it in class. In this example even if he works just 4 hours hes not really losing money. Maybe it's more of a "he needs a certain amount of money and once he hits that amount of hours needed to get that money, then money isn't as valuable to him" because this lambda is what's determining the marginal benefit (at least partially). 
+The $\lambda$ value is in the utility function when wh < 100, or when h<5 if wage=20. This is signifying that Henry has a target income of 100 through his work, and $\lambda$ is a parameter that represents loss aversion for if he doesn't hit that target, making the "loss" hurt him more than a gain of an equal amount of dollars would.
 
 #### 1.6 
 Colin will work until MB=MC, and as you can see from the graph, that happens at 20 hours.
@@ -100,7 +98,7 @@ It is not always true that someone with reference dependent preferences will wor
 ggplot(data, aes(x = hours, y = utility)) + 
   geom_segment(aes(x = 0, xend = 14.29, y = 21, yend = 21)) +
   geom_segment(aes(x = 14.29, xend = 24, y = 7, yend = 7)) +
-  geom_segment(aes(x = 0, xend = 24, y = 0, yend = 48))
+  geom_segment(aes(x = 0, xend = 24, y = 0, yend = 48)) +
   labs(title = 'Decision when wage is 7')
 
 
