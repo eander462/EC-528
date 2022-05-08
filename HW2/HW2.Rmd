@@ -169,7 +169,7 @@ A randomized experiment was necessary in this study because workers' choice of l
 
 #### 2.4
 
-The first column of table 3 tells us (with well isolated treatment effect) that the increased commission generated 1000 CHF in additional revenue over the control group. Column 4 tell us the same about hours worked. There is strong evidence that workers worked 4 additional shifts when the commission rate was raised. 
+The first column of table 3 tells us (with well isolated treatment effect) that the increased commission generated 1000 CHF in additional revenue over the control group. Column 4 tell us the same about hours worked. There is strong evidence that workers worked 4 additional shifts when the commission rate was raised. The research question was whether or not workers will work more if wages were higher and all else was equal, and these columns from the table give very strong evidence that they will.
 
 Table 5 tells us that revenue per shift is reduced by 6% when the high commissions are in effect. 
 
