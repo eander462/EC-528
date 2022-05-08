@@ -21,6 +21,8 @@ Setting $\frac{dU}{dh}$ equal to zero gives us $40-h = 0$ or $h=40$
 Therefore Henry's utility will be maximized when he works 40 hours.
 
 #### 1.2
+Two ways to solve thi:
+
 We can take the derivative $\frac{dh}{dw}$ to see how Henry's hours responds to wages
 
 First we need to solve for an equation for h:
@@ -36,6 +38,8 @@ Using this, we find $\frac{dh}{dw}$ to see how he responds to wage changes
 $\frac{dh}{dw} = 2/\beta$
 
 $\beta$ is positive, so the whole derivative is positive. This means that if wages increase then Henry will work more hours.
+
+Second way:
 
 To see how Henry responds to wage changes, we will see how much he works if his wage is increased to 25 and $\beta$ stays at 1.
 
@@ -157,12 +161,20 @@ The authors in this paper are researching if workers choose to work more if wage
 
 #### 2.2
 
-The researchers got data from a Swiss bike messaging service. Their data contained hours worked, and revenue generated for each worker. To run the experiment, they randomly separated messengers into two groups A and B. The treated group was given a 25% increase in their commission rate. There were two periods to the study. In the first period, group A was the control and B was treated, then in the second period, the roles were reversed. The participants were notified that they would receive a commission bump before it happend which is important because the theory depends on the wage increase being anticipated and temporary. 
+The researchers got data from a Swiss bike messaging service. Their data contained hours worked, and revenue generated for each worker. To run the experiment, they randomly separated messengers into two groups A and B. The treated group was given a 25% increase in their commission rate. There were two periods to the study. In the first period, group A was the control and B was treated, then in the second period, the roles were reversed. The participants were notified that they would receive a commission bump before it happened which is important because the theory depends on the wage increase being anticipated and temporary. 
 
 #### 2.3
+
+A randomized experiment was necessary in this study because workers' choice of labor is dependent on many factors, and thus faces endogeneity challenges. The standard labor model only predicts changes due to transitory wage changes, or anticipated wage changes, but these are not the typical changes to wages. Most wage changes are not transitory, they are a permanent wage increase. It is also hard to determine if workers actually do anticipate wage changes, so the standard model fails us. Wages are also determined by supply and demand jointly, so we cannot just regress wages on labor amount to find the answer. There are also other challenges that mean that the true relationship between labor choice and wages cannot be directly determined. A randomized experiment negates the challenges, and allows the authors to get a measure of workers' responsiveness to wage changes. 
 
 #### 2.4
 
 The first column of table 3 tells us (with well isolated treatment effect) that the increased commission generated 1000 CHF in additional revenue over the control group. Column 4 tell us the same about hours worked. There is strong evidence that workers worked 4 additional shifts when the commission rate was raised. 
 
 Table 5 tells us that revenue per shift is reduced by 6% when the high commissions are in effect. 
+
+#### 2.5
+
+It is difficult to determine how hours change with wages because people have weird utility functions such as the one from 1.8. A piece wise utility function like Colin has mean that the choice of how much to work depends on more than just wages, so the model faces endogeneity problems. People may do as Richard Thayler suggested, and set a target wage, so they actually end up working fewer hours when wages are higher: the exact opposite of what supply and demand would predict. There are also the issues described in 2.3 about endogeneity, and the lack of transitivity and anticipated wage changes. 
+
+The randomized experimental design does solve most of the issues with this. The problems the authors describe for the problem are described in 2.3, and the experiment by design solves all of those. The experiment makes wage increase completely salient, and transitory, which removes endogeneity from supply and demand. The issue of a target wage is also solved (mostly) because workers can only choose how many shifts to work, not exactly how many hours. Each shift is several hours long, so a target wage would be harder to achieve. 
