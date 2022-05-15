@@ -1,0 +1,7 @@
+---
+title: "HW3"
+author: "Jeremy Patak"
+date: '2022-05-15'
+output: html_document
+---
+jkb
