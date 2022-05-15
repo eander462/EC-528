@@ -4,4 +4,21 @@ author: "Jeremy Patak"
 date: '2022-05-15'
 output: html_document
 ---
-jkb
+
+### Question 1
+
+#### 1.1
+$U(c_1, c_2, c_3) = log(c_1) + \delta log(c_2) + \delta^2log(c_3)$
+
+#### 1.2
+$M_1 + \frac{M_2}{1+r} + \frac{M_3}{(1+r)^2} = c_1 + \frac{c_2}{1+r} + \frac{c_3}{(1+r)^2}$
+
+#### 1.3
+First we will find $MU_{c_t}$, then $P_{c_t}$, then use $\frac{MU_{c_t}}{P_{c_t}}$ to set the three goods $c_1, c_2, c_3$ equal to each other.
+
+$MU_{c_1} = \frac{1}{c_1}$
+
+$MU_{c_2} = \frac{\delta}{c_2}$
+
+$MU_{c_3} = \frac{\delta^2}{c_3}$
+
