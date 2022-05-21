@@ -22,3 +22,34 @@ $MU_{c_2} = \frac{\delta}{c_2}$
 
 $MU_{c_3} = \frac{\delta^2}{c_3}$
 
+
+$P_{c_1} = 1$
+
+$P_{c_2} = \frac{1}{1+r}$
+
+$P_{c_3} = \frac{1}{(1+r)^2}$
+
+
+$\frac{MU_{c_1}}{MU_{c_2}} = \frac{\frac{1}{c_1}}{\frac{\delta}{c_2}} = \frac{c_2}{\delta c_1}$ and we set this equal to the price ratio $\frac{P_{c_1}}{P_{c_2}} = \frac{1}{\frac{1}{1+r}} = 1+r$. Therefore, $\frac{c_2}{\delta c_1} = 1+r$ and $c_2\star = c_1\star \delta(1+r)$ or $c_1\star = \frac{c_2\star}{\delta(1+r)}$
+
+$\frac{MU_{c_1}}{MU_{c_3}} = \frac{\frac{1}{c_1}}{\frac{\delta^2}{c_3}} = \frac{c_3}{\delta^2 c_1}$ and we set this equal to the price ratio $\frac{P_{c_1}}{P_{c_3}} = \frac{1}{\frac{1}{(1+r)^2}} = (1+r)^2$. Therefore, $\frac{c_3}{\delta^2 c_1} = (1+r)^2$ and $c_3\star = c_1\star \delta^2(1+r)^2$ or $c_1\star = \frac{c_3\star}{\delta^2(1+r)^2}$
+
+We now know that $c_1\star$ equals $\frac{c_2\star}{\delta(1+r)}$ and also equals $\frac{c_3\star}{\delta^2(1+r)^2}$
+
+So, $2c_1\star = \frac{c_2\star}{\delta(1+r)} + \frac{c_3\star}{\delta^2(1+r)^2}$ and we can simplify to $c_1\star = \frac{c_2\star}{2\delta(1+r)} + \frac{c_3\star}{2\delta^2(1+r)^2}$
+
+Note: Erik, I'm not sure what the form of the final answer should be. Do you think this is what it is asking for? 
+I followed the steps in slides 30-32 in slide set 5 to get this.
+
+
+#### 1.4
+
+#### 1.5
+
+### Question 2
+
+#### 2.1
+The standard model uses the expected utility theory, but this is violated in this example by the certainty effect. Winning the lottery is a very low probability outcome, so they will be more risk loving in this situation. However, making money off of bonds has a much higher probability, and the couple therefore displays risk aversion in that situation. This behavior is explained by the certainty effect, but not by the standard model.
+
+#### 2.2
+This behavior is likely a form of default options. People don't know how much they want to save, so they pick an option that has significance from the employer or government (max amounts matches, etc.). If that is why people are making this choice, it violates the standard model, because the standard model assumes people have complete preferences and relying on the default option breaks that assumption. 
