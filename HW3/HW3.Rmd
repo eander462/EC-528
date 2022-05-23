@@ -41,6 +41,40 @@ So, $2c_1\star = \frac{c_2\star}{\delta(1+r)} + \frac{c_3\star}{\delta^2(1+r)^2}
 Note: Erik, I'm not sure what the form of the final answer should be. Do you think this is what it is asking for? 
 I followed the steps in slides 30-32 in slide set 5 to get this.
 
+I'll do this with the lagrange method
+
+First, we set up the lagrangian:
+
+$L = log(c_1) + \delta log(c_2) + \delta^2log(c_3) - \lambda (M_1 + \frac{M_2}{1+r} + \frac{M_3}{(1+r)^2} = c_1 + \frac{c_2}{1+r} + \frac{c_3}{(1+r)^2})$
+
+Then differentiate by each variable
+
+$dL/dc_1 = 1/c_1 - \lambda = 0$
+
+$dL/dc_2 = \delta/c_2 - \lambda/(1+r) = 0$
+
+$dL/dc_3 = \delta^2/c_3 - \lambda/(1+r)^2 = 0$
+
+We know that the marginal utility for $c_t$ is $U'(c_t) = 1/c_t$ so we can plug that into the equations we just got:
+
+$dL/dc_1 = U'(c_1) - \lambda = 0$
+
+$dL/dc_2 = \delta U'(c_2) - \lambda/(1+r) = 0$
+
+$dL/dc_3 = \delta^2 U'(c_3) - \lambda/(1+r)^2 = 0$
+
+Now simplify
+
+$U'(c_1) = \lambda$
+
+$U'(c_2)\delta(1+r) = \lambda$
+
+$U'(c_3)\delta^2(1+r)^2 = \lambda$
+
+Now we can equate them since they all equal $\lambda$
+
+$U'(c_1) = \delta (1+r)U'(c_2) = \delta^2 (1+r)^2 U'(c_3)$
+
 
 #### 1.4
 
