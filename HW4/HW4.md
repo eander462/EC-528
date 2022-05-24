@@ -18,6 +18,7 @@ The responder gets 0 utility if they reject the offer, and t utility if they acc
 In math their utility is:
 
 $U_R$ = t if t > 0 
+
 $U_R$ = 0 if t <= 0
 
 Accept the offer if $U_R > 0$.
@@ -27,6 +28,7 @@ Accept the offer if $U_R > 0$.
 Given that best response function, the proposer gets utility
 
 $U_P$ = X - t, if t > 0
+
 $U_P$ = 0, if t <= 0
 
 So to maximize their utility, they should choose the smallest possible t. If t is any positive number, the responder will accept the offer, and the smallest possible t means X - t is as large as possible. 
