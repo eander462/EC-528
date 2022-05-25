@@ -17,20 +17,20 @@ knitr::opts_chunk$set(echo = TRUE)
 
 The responder gets 0 utility if they reject the offer, and t utility if they accept it where t is the amount the propoeser proposes. So to maximize utility, the responder's best response function is to choose to accept the proposal when X-t>0 and reject otherwise.
 
-In math their utility is:
+We can create a dummy variable a that is 1 if the responder accepts the offer and 0 if the responder rejects the offer. 
 
-$U_R$ = t if t > 0 
+Using this we can create a best response function $U_R = a(t)$
 
-$U_R$ = 0 if t <= 0
-
-Accept the offer if $U_R > 0$.
+Once the responder knows the value of t given by the proposer, he can pick the value of a to maximize the best response function, which will be accepting any t>0 and being indifferent when t=0.
 
 ### Question 2
 
 Given that best response function, the proposer gets utility
 
-$U_P$ = X - t, if t > 0
+$U_P = a(x-t)$ 
 
-$U_P$ = 0, if t <= 0
+We know the value of a will be 1 if t>0, and since the responder would be indifferent if t=0, we assume that they would randomize with equal probability between accepting and rejecting. That means if t=0, then $U_P = .5(x)$ and if t>0 then $U_P = x-t$
 
-So to maximize their utility, they should choose the smallest possible t. If t is any positive number, the responder will accept the offer, and the smallest possible t means X - t is as large as possible. 
+If t>0, a will always be 1, and the proposer should try to minimize t. In this case, the minimal value of t where t>0 would be t=1.
+
+So given the value of x, the proposer should pick the maximum of $.5(x)$ and $x-t$ to decide what they should do.
