@@ -34,3 +34,19 @@ We know the value of a will be 1 if t>0, and since the responder would be indiff
 If t>0, a will always be 1, and the proposer should try to minimize t. In this case, the minimal value of t where t>0 would be t=1.
 
 So given the value of x, the proposer should pick the maximum of $.5(x)$ and $x-t$ to decide what they should do.
+
+### Question 3
+
+$\epsilon$ represents the players greed/desire to end up with more than the opposing player. If $\epsilon = 0$ then the player doesn't care about that at all.
+
+$\gamma$ represents the players guilt/desire for fairness if they end up with more than the opposing player. If $\epsilon = 0$ then the player doesn't care about that at all.
+
+### Question 4
+
+If the responder accepts the offer their utility function would be
+$U_r = X_r - \frac{3}{4}Max(0, X_p-X_r) - \frac{1}{6}Max(0,X_r - X_p)$
+
+If the responder rejects the offer their utility function would be 
+$U_r = 0 - \frac{3}{4}0 - \frac{3}{4}0 = 0$
+
+Therefore if the responder gets a utility of U>0 by accepting the offer, they should accept. This can be written as:
