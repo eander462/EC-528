@@ -1523,21 +1523,91 @@ div.tocify {
 if they accept it where t is the amount the propoeser proposes. So to
 maximize utility, the responder’s best response function is to choose to
 accept the proposal when X-t&gt;0 and reject otherwise.</p>
-<p>In math their utility is:</p>
-<p><span class="math inline">\(U_R\)</span> = t if t &gt; 0</p>
-<p><span class="math inline">\(U_R\)</span> = 0 if t &lt;= 0</p>
-<p>Accept the offer if <span class="math inline">\(U_R &gt;
-0\)</span>.</p>
+<p>We can create a dummy variable a that is 1 if the responder accepts
+the offer and 0 if the responder rejects the offer.</p>
+<p>Using this we can create a best response function <span class="math inline">\(U_R = a(t)\)</span></p>
+<p>Once the responder knows the value of t given by the proposer, he can
+pick the value of a to maximize the best response function, which will
+be accepting any t&gt;0 and being indifferent when t=0.</p>
 </div>
 <div id="question-2" class="section level3">
 <h3>Question 2</h3>
 <p>Given that best response function, the proposer gets utility</p>
-<p><span class="math inline">\(U_P\)</span> = X - t, if t &gt; 0</p>
-<p><span class="math inline">\(U_P\)</span> = 0, if t &lt;= 0</p>
-<p>So to maximize their utility, they should choose the smallest
-possible t. If t is any positive number, the responder will accept the
-offer, and the smallest possible t means X - t is as large as
-possible.</p>
+<p><span class="math inline">\(U_P = a(x-t)\)</span></p>
+<p>We know the value of a will be 1 if t&gt;0, and since the responder
+would be indifferent if t=0, we assume that they would randomize with
+equal probability between accepting and rejecting. That means if t=0,
+then <span class="math inline">\(U_P = .5(x)\)</span> and if t&gt;0 then
+<span class="math inline">\(U_P = x-t\)</span></p>
+<p>If t&gt;0, a will always be 1, and the proposer should try to
+minimize t. In this case, the minimal value of t where t&gt;0 would be
+t=1.</p>
+<p>So given the value of x, the proposer should pick the maximum of
+<span class="math inline">\(.5(x)\)</span> and <span class="math inline">\(x-t\)</span> to decide what they should do.</p>
+</div>
+<div id="question-3" class="section level3">
+<h3>Question 3</h3>
+<p><span class="math inline">\(\epsilon\)</span> represents the players
+greed/desire to end up with more than the opposing player. If <span class="math inline">\(\epsilon = 0\)</span> then the player doesn’t care
+about that at all.</p>
+<p><span class="math inline">\(\gamma\)</span> represents the players
+guilt/desire for fairness if they end up with more than the opposing
+player. If <span class="math inline">\(\epsilon = 0\)</span> then the
+player doesn’t care about that at all.</p>
+</div>
+<div id="question-4" class="section level3">
+<h3>Question 4</h3>
+<p>If the responder accepts the offer their utility function would be
+<span class="math inline">\(U_r = X_r - \frac{3}{4}Max(0, X_p-X_r) -
+\frac{1}{6}Max(0,X_r - X_p)\)</span></p>
+<p>If the responder rejects the offer their utility function would be
+<span class="math inline">\(U_r = 0 - \frac{3}{4}0 - \frac{3}{4}0 =
+0\)</span></p>
+<p>Therefore if the responder gets a utility of U&gt;0 by accepting the
+offer, they should accept, and if they get a U&lt;0 by rejecting the
+offer, they should reject. We create a dummy variable a that is 1 if the
+responder accepts and 0 if the responder rejects. Then we can write the
+responders best response function as <span class="math inline">\(U_r =
+a(X_r - \frac{3}{4}Max(0, X_p-X_r) -
+\frac{1}{6}Max(0,X_r-X_p))\)</span>. The responder would then maximize
+<span class="math inline">\(U_r\)</span> given <span class="math inline">\(X_r\)</span> and <span class="math inline">\(X_p\)</span> by deciding a.</p>
+<p>The best incentive for the proposer is to offer the smallest amount
+that the responder would accept. We know that the proposer would get 0
+if the deal was rejected so the proposer wants to make sure the deal is
+accepted. We know that he should offer the smallest amount the responder
+would accept by looking at his utility function <span class="math inline">\(U_p = X_p - \frac{3}{4}Max(0,X_r - X_p) -
+\frac{1}{6}Max(0, X_p-X_r)\)</span>. We can see that the proposer loses
+some utility by getting more money than the responder, but not as much
+utility as he gains from getting the extra money. Increasing <span class="math inline">\(X_r\)</span> by 1 (by decreasing <span class="math inline">\(X_p\)</span> by 1) would increase the last term of
+the utility function by 2/6, but would also decrease the first term by
+1, so the proposer loses utility for every dollar he gives away.</p>
+<p>We can find the smallest amount the responder would accept by setting
+a in his best response function to 1 (because we want to make sure he
+accepts), then setting the function equal to 0 (where he would be
+indifferent between accepting and rejecting). Once we find the proposal
+he’d be indifferent on, we would propose the smallest amount above that
+# that we could (to make sure he accepts).</p>
+<p>Setting a in the responders best response function gives us <span class="math inline">\(U_r = X_r - \frac{3}{4}Max(0, X_p-X_r) -
+\frac{1}{6}Max(0,X_r-X_p)\)</span>. We know that the proposer wants to
+maximize his money, and the responders <span class="math inline">\(\epsilon\)</span> is less than 1 (meaning he
+values receiving a dollar more than he is negatively impacted by having
+less than the other player). This means that we know <span class="math inline">\(X_p\)</span> will be greater than <span class="math inline">\(X_r\)</span>, and we can therefore discard the
+last term of the responders BR function.</p>
+<p>We now have <span class="math inline">\(U_r = X_r - \frac{3}{4}Max(0,
+X_p-X_r)\)</span>. Since we know that <span class="math inline">\(X_p
+&gt; X_r\)</span> and therefore <span class="math inline">\(X_p - X_r
+&gt;0\)</span>, we can further simplify to <span class="math inline">\(U_r = X_r - \frac{3}{4}(X_p-X_r) = \frac{7}{4}X_r
+- \frac{3}{4}X_p\)</span>, which we can set equal to 0.</p>
+<p>Assuming the proposer has 48 dollars to split, we can rewrite again
+to <span class="math inline">\(0=\frac{7}{4}(48-X_p) - \frac{3}{4}X_p =
+84 - \frac{7}{4}X_p - \frac{3}{4}X_p = 84 - \frac{5}{2}X_p\)</span> or
+<span class="math inline">\(\frac{5}{2}X_p = 84\)</span> which
+simplifies to <span class="math inline">\(X_p = 33.6\)</span> which
+corresponds with <span class="math inline">\(X_r = 48-33.6 =
+14.4\)</span>.</p>
+<p>Since the responder would be indifferent between accepting and
+rejecting when the offer was 14.4, the proposers best move would be to
+offer 15 dollars.</p>
 </div>
 
 
